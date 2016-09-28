@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.blue {
+			background-color: blue;
+		}
+		div.blue {
+			width: 300px;
+			height: 100px;
+			margin: auto;
+		}
+		span.blue {
+			color: #6666ee;
+			margin: 20px;
+			padding: 20px;
+		}
+		.margined {
+
+		}
+		button {
+			margin: 1em;
+			width: 150px;
+			height: 20px;
+		}
+
+		.hidden{
+			display: none;
+		}
+
+		.columns {
+			/*setting font-size to 0px will effectively remove the whitespace between two inline/inine block elements*/
+			font-size: 0;
+		}
+		.column{
+			display: inline-block;
+			width: 33.333%;
+			font-size: 16px;
+		}
+	</style>
+</head>
+<body>
+<!-- divs are display: block; in the UASS -->
+<!-- display: block elements sit on their own line. -->
+<!-- other examples: p, header, footer, main, br -->
+	<div class="blue">I really like to play frisbee.</div>
+	<!-- spans are display: inline; by default -->
+	<!-- display: inline elements take up the width of their child content. -->
+	<!-- other examples: a, small, strong, em -->
+	<span class="blue">This is some additional text content within the span element</span>
+	<span class="margined">Another span! woo!</span>
+<!-- inputs and buttons are display:inline block by default -->
+	<!-- respect height, margins, padding, but sit on the same line as other inline/inline block content -->
+	<button>click me</button>
+	<!-- button can have nested and input is void -->
+	<div class="hidden">you cant see me</div>
+	<div class="columns">
+		<div class="column">cookie</div>
+		<div class="column">chocolate</div>
+		<div class="column">chip</div>
+	</div>
+</body>
+</html>

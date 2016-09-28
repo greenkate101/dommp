@@ -1,0 +1,30 @@
+p {
+	/* !important always (always) wins. css library or framework or a hotmess at work where there is not other option. */
+	color: goldenrod !important;
+}
+
+/* 1,0,1 */
+div#content {
+	display: block;
+}
+
+/*1,0,0*/
+/*#content*/
+/*2, */
+html body #content {
+	display: none;
+}
+
+.visible {
+	display: block;
+}
+
+div {
+	background-color: blue;
+	height: 300px;
+	display: none;
+  }
+
+div {
+	background-color: orange;
+}

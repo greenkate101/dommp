@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- display:block; for top and bottom by default-->
+	<style type="text/css">
+		header {
+			height: 60px;
+			background-color: red;
+		}
+		main {
+			margin: 16px 0;
+			overflow: auto;
+		}
+		.column {
+			float: left;
+			width: 50%;
+			height: 400px;
+			background-color: green;
+		}
+		.column#purple{ 
+			background-color: purple;
+		 }
+
+		 footer {
+		 	height: 60px;
+			background-color: red;
+		 }
+
+	</style>
+</head>
+<body>
+<header class="topblock"></header>
+<!-- half and half body float left 50% float: left; and do two float lefts. float needs a height -->
+	<main>
+		<div class="column"></div>
+		<div id="purple" class="column"></div>
+	</main>
+<footer></footer>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	*,*:before,*:after {
+		box-sizing: border-box;
+	/*}*  add this to everything now*/
+		#content * {
+			box-sizing: content-box; 
+		} 
+		#border * {
+			box-sizing: border-box;
+		}
+		/*unecessary jsut to show for notes (above)*/
+		/* astrik means every element inside*/
+		main { 
+		padding: 2em; 
+		background-color: #aaa;
+		}
+		.columns {
+			overflow: auto;
+			padding: 2em;
+			background-color: #ccc;
+		}
+		.column {
+			float: left;
+			width: 50%;
+			background-color: #eee;
+			height: 500px;
+		}
+
+		}
+		.column.red {
+			border: 1px solid:red;
+
+		}
+	</style>
+</head>
+<body>
+	<div id="content"></div>
+		<main>
+			<div class="columns">
+					<div id="column"></div>
+					<div id="column red"></div>
+			</div>
+			</main>
+</body>
+</html>
